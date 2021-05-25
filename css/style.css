@@ -91,7 +91,7 @@ body
     font-size: 18px;
     color: var(--button-color);
     margin-left: 9px;
-    margin-right: 250px;
+    margin-right: 245px;
     padding: 4px 10px;
     border: 1px solid;
     border-image-slice: 0.5;
@@ -150,14 +150,13 @@ body
 .section
 {
     /* width: 1600px; */
-    background-image:url(../images/section1.svg), url(../images/background.jpg);
+    background-image:url(../images/background.jpg);
     background-repeat: no-repeat;
-    background-size: 733px, cover;
-    background-position: top -48px right 235px,top -68px center;
-    padding-top: 140px;
-    /* padding-bottom: 120px; */
+    background-size: cover;
+    background-position: center;
+    /* padding-top: 140px; */
 }
-.section-container::after
+.section-one::after
 {
     content: '';
     margin-top: 140px;
@@ -172,6 +171,19 @@ body
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+.section-one
+{
+    max-width: 1200px;
+    min-height: 526px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    background-image: url(../images/section1.svg);
+    background-repeat: no-repeat;
+    background-size: 733px;
+    background-position: top -48px right 100px;
+    padding-top: 140px;
 }
 .section-title
 {
@@ -198,14 +210,12 @@ body
 /* New section */
 .new-section
 {
-    /* width: 1600px; */
-    background-image: url(../images/leshrakfirst.svg),url(../images/deathsecond.svg),url(../images/sectiontwoo.svg), url(../images/sectiontwo.svg),
-    url(../images/store2.jpg);
+    background-image: url(../images/store2.jpg);
     background-repeat: no-repeat;
-    background-size:409px,509px,760px,760px,cover;
-    background-position: top 170px right 561px, top 45px left 308px,
-    top -33px left -21px,top -33px right -21px,center;
-    padding-top: 543px;
+    background-size:cover;
+    background-position: center;
+    /* padding-top: 543px; */
+    
     /* padding-bottom: 89px; */
 }
 .new-section > .section-container::after
@@ -217,11 +227,25 @@ body
     height: 1px;
     background: linear-gradient(#e66465, #9198e5);
 }
+.new-section > .section-container
+{
+    max-width: 1200px;
+    min-height: 526px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    background-image: url(../images/leshrakfirst.svg),url(../images/deathsecond.svg),url(../images/sectiontwoo.svg), url(../images/sectiontwo.svg);
+    background-repeat: no-repeat;
+    background-size:409px,509px,700px,700px;
+    background-position: top 190px right 312px, top 68px left 215px,
+    top -4px left -51px,top -4px right -112px;
+    padding-top: 543px;
+}
 .section-new
 {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -244,11 +268,10 @@ body
 {
     display: flex;
     align-items: center;
-    background:url(../images/witch.svg), #080C13;
+    background: #080C13;
     background-repeat: no-repeat;
-    background-position: left 192px top 417px, center;
-    padding-top: 120px;
-    background-size: auto, cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .gradient
@@ -265,6 +288,12 @@ body
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background:url(../images/witch.svg);
+    background-repeat: no-repeat;
+    background-position: left 0px top 417px;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    background-size: 1200px;
 }
 .like-btn
 {
@@ -328,6 +357,9 @@ body
     margin-top: 120px;
     padding: 65px 852px 65px 72px;
 }
+
+/* Footer */
+
 .flex
 {
     padding-top: 70px;
