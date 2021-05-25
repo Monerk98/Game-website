@@ -58,6 +58,8 @@ body
 /* Header */
 .header
 {
+    max-width: 1600px;
+    margin: 0 auto;
     background: var(--top-btm-color);
     /* width: 1600px; */
 }
@@ -149,7 +151,8 @@ body
 /* Main */
 .section
 {
-    /* width: 1600px; */
+    max-width: 1600px;
+    margin: 0 auto;
     background-image:url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,6 +213,8 @@ body
 /* New section */
 .new-section
 {
+    max-width: 1600px;
+    margin: 0 auto;
     background-image: url(../images/store2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -266,6 +271,8 @@ body
 /* Second section */
 .section-second
 {
+    max-width: 1600px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     background: #080C13;
@@ -362,6 +369,8 @@ body
 
 .flex
 {
+    max-width: 1600px;
+    margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 70px;
     background-color: #080C13;
