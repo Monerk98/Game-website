@@ -9,16 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
-    <script>
-        var buy = new Audio();
-        buy.src = "buy.mp3";
-    </script>
-    <script>
-        var welcome = new Audio();
-        welcome.src = "welcome.mp3";
-    </script>
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
         <nav class="nav-container">
@@ -26,10 +19,10 @@
             <img class="dota-two" src="./images/dotatwo.png" alt="">
             <ul class="list link">
                 <li class="list-item">
-                    <a href="#!" class="list current studio">Как это работает</a>
+                    <a href="./index.html" class="list studio">Как это работает</a>
                 </li>
                 <li class="list-item">
-                    <a href="./dota.html" class="list studio"> Купить скины </a>
+                    <a href="#" class="list current studio"> Купить скины </a>
                 </li>
                 <li class="list-item">
                     <a href="#!" class="list studio"> Бонус </a>
@@ -57,61 +50,71 @@
         </a>
     </div>
     </header>
+    <!-- Main -->
     <main>
-        <section class="section">
-            <div class="section-one">
-            <h1 class="section-title">Самая выгодная <br> продажа скинов <br> Dota2</h1>
-            <button class="section-btn" onmousedown="buy.play()">Перейти к продаже
-                <img  class="arrow" src="./images/arrow.svg" alt="arrow">
-            </button>
-        </div>
-        </section>
-        <section class="new-section">
-            <div class="section-container main-sec">
-            <h2 class="visually-hidden">Dota</h2>
-            <div class="section-new">
-                <h3 class="dota">Быстро продать скины<br>Dota2 легко!</h3>
-                <h3 class="dota">Получай деньги за продажу <br> скинов любым способом</h3>
-            </div>
-        </div>
-        </section>
-        <section class="section-second">
-            <div class="section-container">
-                <ul class="gradient list">
-                    <li class="like-btn">
-                        <a href="#" class="under-btn list">Я вывел вещь, в стиме она стоит дешевле!</a>
+        <section class="true-section">
+            <h1 class="visually-hidden">Hello</h1>
+            <div class="sec-page">
+                <ul class="new-page list">
+                    <li class="page-card ">
+                        <a href="" class="page-link list">
+                           <img class="img-page" src="./images/heros.png" alt="heroes">
+                           <div class="card-container">
+                            <h2 class="text">Dota 2</h2>
+                            <p class="para-text">Веб-сайт</p>
+                           </div>
+                        </a>
                     </li>
-                    <li class="like-btn">
-                        <a href="#" class="under-btn list">Почему мои вещи проданы?</a>
+                    <li class="page-card">
+                        <a href="" class="page-link list">
+                            <img class="img-page" src="./images/heros.png" alt="heroes">
+                            <div class="card-container">
+                                <h2 class="text">Dota 2</h2>
+                                <p class="para-text">Дизайн</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="like-btn">
-                        <a href="#" class="under-btn list">Как купить выгодное предложение?</a>
+                    <li class="page-card">
+                        <a href="" class="page-link list">
+                            <img class="img-page" src="./images/heros.png" alt="heroes">
+                            <div class="card-container">
+                                <h2 class="text">Dota 2</h2>
+                                <p class="para-text">Приложение</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="like-btn">
-                        <a href="#" class="under-btn list">Я не нашел интересующего меня вопроса</a>
+                    <li class="page-card">
+                        <a href="" class="page-link list">
+                            <img class="img-page" src="./images/heros.png" alt="heroes">
+                            <div class="card-container">
+                                <h2 class="text">Dota 2</h2>
+                                <p class="para-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="page-card">
+                        <a href="" class="page-link list">
+                            <img class="img-page" src="./images/heros.png" alt="heroes">
+                            <div class="card-container">
+                                <h2 class="text">Dota 2</h2>
+                                <p class="para-text">Об игре</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="page-card">
+                        <a href="" class="page-link list">
+                            <img class="img-page" src="./images/heros.png" alt="heroes">
+                            <div class="card-container">
+                                <h2 class="text">Dota 2</h2>
+                                <p class="para-text">Наш Сайт</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
-                <ul class="non-gradient list">
-                <li class="title-two">
-                    <h2 class="text-two">Я вывел вещь, в стиме она стоит дешевле!</h2>
-                </li>
-                <li class="paragraph-two">
-                    <p class="under-text-two">Если Вы вывели предмет обменом в стим, и его цена в стиме ниже на 20%, чем цена на сайте, тогда смело пишите в поддержку через виджет на сайте. Мы начислим Вам разницу на баланс на сайте!
-                </p>
-                </li>
-                <li class="paragraph-two">
-                    <p class="under-text-two">Если предмет был выведен балансом на стим, и Вам не хватает на его покупку на площадке стим, тогда тоже смело можете писать в поддержку, мы компенсируем. Внимание, компенсация полагается если разница в цене от 10 рублей.
-                </p>
-                </li>
-            </ul>
-            <div class="colorfull">
-                <button class="section-btn" onmousedown="buy.play()">Перейти к продаже
-                    <img  class="arrow" src="./images/arrow.svg" alt="arrow">
-                </button>
-            </div>
             </div>
         </section>
     </main>
+    <!-- Footer -->
     <footer class="flex">
         <div class="footer-container">
         <div class="footer-flexone">
@@ -224,3 +227,4 @@
     </footer>
 </body>
 </html>
+    
