@@ -155,6 +155,7 @@ body
     width: 100%;
     height: 3px;
     background-color: blue;
+    border-radius: 2px;
     /* transform:scaleX(0);
     transition: transform 250ms linear; */
 }
@@ -627,4 +628,124 @@ color: var(--text-color);
 .hello-text:hover
 {
     color: var(--button-color);
+}
+/* =============End of project============== */
+/* =============Modal page start============== */
+.backdrop
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+.is-hidden
+{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 580px;
+    background-image: url(http://bit.ly/2gPLxZ4) ;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+}
+.modal-btn
+{
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.svg-modal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11px;
+    height: 11px;
+}
+.backdrop-card
+{
+    outline: 1px solid #eeeeee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* flex-basis: calc((100% - 30px * 3) / 3 );
+    margin-right: 30px;
+    margin-bottom: 30px; */
+}
+.backdrop-card:hover,
+.backdrop-card:focus
+{
+     box-shadow: 1px 3px 14px 5px #FF5620;
+     transition-duration: 500ms;
+     /* outline: 1px solid black; */
+}
+.backdrop-link
+{
+    display: block;
+    align-items: center;
+}
+.backdrop-container {
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    padding: 20px 24px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+
+}
+.img-title-backdrop
+{
+    overflow: hidden;
+}
+.backdrop-img-page
+{
+    margin: 0 auto;
+    /* border-top:1px solid black ;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+    /* padding: 20px 32px; */
+    width: 100%;
+    height: 100%;
+    /* 32px */
+    transform: translateY(100%) rotateY(0);
+    transition: transform 250ms linear,transform 500ms linear;
+}
+.backdrop-link:hover .backdrop-img-page
+{
+    transform:translateY(0) rotateY(180deg);
+}
+.backdrop-container .text
+{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: #FFFFFF;
+}
+.para-text
+{
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: #757575;
 }

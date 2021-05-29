@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./js/modal.js">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
     <script>
@@ -61,7 +62,7 @@
         <section class="section">
             <div class="section-one">
             <h1 class="section-title">Самая выгодная <br> продажа скинов <br> Dota2</h1>
-            <button class="section-btn" onmousedown="buy.play()">Перейти к продаже
+            <button class="section-btn" data-modal-open>Перейти к продаже
                 <img  class="arrow" src="./images/arrow.svg" alt="arrow">
             </button>
         </div>
@@ -222,5 +223,26 @@
         </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <li class="backdrop-card list">
+                <a href="./dota.html" target="_blank" class="backdrop-link list">
+                    <div class="img-title-backdrop">
+                    <img class="backdrop-img-page" src="./images/dota2/riki.png" alt="heroes">
+                </div>
+                    <div class="backdrop-container">
+                        <h2 class="text">Dota 2</h2>
+                        <p class="para-text">Дизайн</p>
+                    </div>
+                </a>
+            </li>
+            <button class="modal-btn" data-modal-close>
+                <svg class="svg-modal">
+                    <use href="./images/sprite.svg#icon-btn"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
